@@ -2,6 +2,14 @@ import path from 'path';
 import { promises as fs } from 'fs';
 
 export default async function handler(req, res) {
+  // Récupérer le référent de la requête
+  const referer = req.headers.referer;
+
+  // Vérifier si le référent est celui attendu
+  if (!referer || !referer.includes('/api/open')) {
+    return res.status(403).send('Accès refusé');
+  }
+
   try {
     // Récupérer le chemin absolu vers le fichier mysite.html
     const filePath = path.join(process.cwd(), 'public', 'orange.html');
